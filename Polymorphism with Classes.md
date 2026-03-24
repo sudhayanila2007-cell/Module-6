@@ -26,7 +26,31 @@ To create two specific classes — `Beans` and `Mango`. Then, create a **generic
 ---
 
 ## 💻 Program
+```
+class Bird:
+    def sound(self):
+        print("Bird makes a sound")
 
+class Dog:
+    def sound(self):
+        print("Dog barks")
+
+class Cat:
+    def sound(self):
+        print("Cat meows")
+
+
+# Polymorphism
+animals = [Bird(), Dog(), Cat()]
+
+for animal in animals:
+    animal.sound()
+```
 ## Output
-
+```
+Bird makes a sound
+Dog barks
+Cat meows
+```
 ## Result
+the code is verified.
