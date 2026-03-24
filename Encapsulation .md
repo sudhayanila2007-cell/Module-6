@@ -23,7 +23,42 @@ To implement **Encapsulation** in Python by defining a class `Rectangle` with **
 ---
 
 ## 💻 Program
+```
+class Student:
+    def __init__(self, name, marks):
+        self.name = name          # public variable
+        self.__marks = marks      # private variable
 
+    # Getter method
+    def get_marks(self):
+        return self.__marks
+
+    # Setter method
+    def set_marks(self, marks):
+        if marks >= 0 and marks <= 100:
+            self.__marks = marks
+        else:
+            print("Invalid marks")
+
+
+# Create object
+s = Student("John", 85)
+
+# Access public variable
+print("Name:", s.name)
+
+# Access private variable using method
+print("Marks:", s.get_marks())
+
+# Modify using setter
+s.set_marks(90)
+print("Updated Marks:", s.get_marks())
+```
 ## Output
-
+```
+Name: John
+Marks: 85
+Updated Marks: 90
+```
 ## Result
+the code is verified.
